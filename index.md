@@ -1,6 +1,6 @@
 # Introduction to RNA-seq data analysis 
-## 3rd - 5th September 2018
-## Bioinformatics Training Room, Craik-Marshall Building, Downing Site, University of Cambridge
+### 3rd - 5th September 2018
+#### Bioinformatics Training Room, Craik-Marshall Building, Downing Site, University of Cambridge
 
 ![](images/CRUK_Cambridge_logo_small.jpg)
 
