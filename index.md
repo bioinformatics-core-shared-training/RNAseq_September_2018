@@ -41,7 +41,7 @@ _Day 3_
 15:30 - 17:30 [Gene-set testing](html/06_Gene_set_testing.nb.html) - Stephane Ballereau  
 - [practical solutions](Course_Materials/solutions/06_Gene_set_testing.Solutions.nb.html)
 
-> ## Prerequisites {.prereq}
+> ## Prerequisites
 >
 > __**Some basic R knowledge is assumed (and is essential). Without it, you will struggle on this course.**__ 
 > If you are not familiar with the R statistical programming language we
