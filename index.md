@@ -19,7 +19,7 @@ _Day 2 (p.m.)_
 
 14:00 - 14:45 - Importing and QC of RNA-seq data - Ashley Sawle
 
-14:45 - 17:00 - Linear Models and Statistics for Differential Expression - Oscar Rueda
+14:45 - 17:30 - Linear Models and Statistics for Differential Expression - Oscar Rueda
 
 _Day 3_
 
@@ -27,9 +27,9 @@ _Day 3_
 
 12:00 - 13:00 Lunch
 
-13:00 - 15:00 Annotation and Visualistaion - Abbi Edwards
+13:00 - 15:30 Annotation and Visualistaion - Abbi Edwards
 
-15:00 - 17:00 Gene set analysis and Gene ontology testing - Stephane Ballereau
+15:30 - 17:30 Gene set analysis and Gene ontology testing - Stephane Ballereau
 
 ## Outline
 
@@ -37,7 +37,7 @@ In this workshop, you will be learning how to analyse RNA-seq count data, using 
 
 This workshop is aimed at biologists interested in learning how to perform differential expression analysis of RNA-seq data when reference genomes are available. 
 
-There is a [course Etherpad](https://public.etherpad-mozilla.org/p/UoC_RNAseqCourse ). Please post questions here and we will answer them as soon as we can (Or if you can answer someone elses question do so!). The trainers may also post useful code snippets here for you.
+There is a [course Etherpad](https://tinyurl.com/RNAseq092018). Please post questions here and we will answer them as soon as we can (Or if you can answer someone elses question do so!). The trainers may also post useful code snippets here for you.
 
 > ## Prerequisites {.prereq}
 >
@@ -80,7 +80,7 @@ and then unpacking the zip files into your data directory.
     
 ### Lecture slides
 
-- [RNASeq basics](slides/rnaSeqIntro_19June2018.pdf)
+- [Introduction to RNAseq Analysis in R](html/00_Introduction_to_RNAseq_Analysis.html)
 - [Linear Model and Statistics for Differential Expression](slides/LinearModels.pdf)
 
 ### Supplementary lessons
@@ -94,6 +94,8 @@ Additional RNAseq materials:
 - [Downloading files from SRA and aligning](Supplementary_Materials/S1_Getting_raw_reads_from_SRA.nb.html)
 - [Alignment and Counting](Supplementary_Materials/S2_Read_Counts_with_Subread.html)
     + [source file](Supplementary_Materials/S2_Read_Counts_with_Subread.Rmd)
+- [Additional annotation and plotting](Supplementary_Materials/S3_Annotation_and_Visualisation.html)
+    + [source file](Supplementary_Materials/S3_Annotation_and_Visualisation.Rmd)
 
 Data: Example Mouse mammary data (fastq files): 
 	[https://figshare.com/s/f5d63d8c265a05618137](https://figshare.com/s/f5d63d8c265a05618137)
