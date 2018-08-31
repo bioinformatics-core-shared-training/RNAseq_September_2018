@@ -72,9 +72,7 @@ Additional RNAseq materials:
 
 - [Downloading files from SRA and aligning](Supplementary_Materials/S1_Getting_raw_reads_from_SRA.html)
 - [Alignment and Counting](Supplementary_Materials/S2_Read_Counts_with_Subread.html)
-    + [source file](Supplementary_Materials/S2_Read_Counts_with_Subread.Rmd)
 - [Additional annotation and plotting](Supplementary_Materials/S3_Annotation_and_Visualisation.html)
-    + [source file](Supplementary_Materials/S3_Annotation_and_Visualisation.Rmd)
 
 Data: Example Mouse mammary data (fastq files): 
 	[https://figshare.com/s/f5d63d8c265a05618137](https://figshare.com/s/f5d63d8c265a05618137)
