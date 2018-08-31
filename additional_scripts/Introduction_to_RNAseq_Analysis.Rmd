@@ -1,5 +1,5 @@
 ---
-title: "Introduction to RNAseq analysis in R"
+title: "Introduction to RNAseq Data Analysis"
 author: "Ashley Sawle"
 date: "September 2018"
 output:
@@ -439,7 +439,6 @@ abline(ewe, col="red")
 <div style="text-align: right;">
     Hamy et al. (2016) PLOS One
 </div>
--->
 
 ## More Depth or More Reps? {#less_space_after_title}
 
@@ -450,6 +449,7 @@ abline(ewe, col="red")
 <div style="text-align: right;">
     Liu et al. (2014) Bioinformatics
 </div>
+-->
 
 ##
 
