@@ -50,11 +50,14 @@ RNAseq we most commonly wish to count reads aligning to exons, and then to
 summarise at the gene level. 
 
 Lets have a quick look at the top of a GTF file so we can see what data it
-contains and what **feature type** and **attribute type** mean:
+contains and what **feature type** and **attribute type** mean. The gtf file
+is currently in a compressed (gzip) format, we will need to unzip it first:
 
 ```
-cd ~/CourseMaterials/data/counts
+cd ~/RNAseq_September_2018/SupplementaryMaterials/counts
   
+gunzip Mus_musculus.GRCm38.80.gtf.gz
+
 head Mus_musculus.GRCm38.80.gtf
 ```
 

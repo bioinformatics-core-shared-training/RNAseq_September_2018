@@ -124,7 +124,7 @@ $(document).ready(function () {
 <h1 class="title toc-ignore">RNA-seq analysis in R</h1>
 <h3 class="subtitle"><em>Counting</em></h3>
 <h4 class="author"><em>Stephane Ballereau, Mark Dunning, Abbi Edwards, Oscar Rueda, Ashley Sawle</em></h4>
-<h4 class="date"><em>Last modified: 20 Jul 2018</em></h4>
+<h4 class="date"><em>Last modified: 31 Aug 2018</em></h4>
 
 </div>
 
@@ -145,9 +145,11 @@ $(document).ready(function () {
 <p>We will use <strong><code>featureCounts</code></strong> <span class="citation">(Liao, Smyth, and Shi 2014)</span> programme from the <a href="http://subread.sourceforge.net/">subRead package</a> to do the counting. In addition to the BAM files, we also need to provide <strong><code>featureCounts</code></strong> with an annotation file. Usually this will be a GTF/GFF file corresponding to the genome assembly used (a description of the GTF format can be found at <a href="http://genome.ucsc.edu/FAQ/FAQformat.html#format4">UCSC website</a>). <strong><code>featureCounts</code></strong> can also use a simpler annotation format called SAF, this is particularly useful for defining custom/novel features that you wish to count against.</p>
 <p>GTF/GFF files define genomic regions covered by different types of genomic features, e.g. genes, transcripts, exons, or UTRs. The necessary GTF is already in the directory <code>Course_Materials/data</code>. Instruction on where and how to download the GTF can be found in the <a href="../Supplementary_Materials/S1_Getting_raw_reads_from_SRA.html">Supplementary Materials</a>.</p>
 <p>When using a GTF/GFF file we need to tell <strong><code>featureCounts</code></strong> what feature type to use to count reads, and what attribute type to summarise the results at. For RNAseq we most commonly wish to count reads aligning to exons, and then to summarise at the gene level.</p>
-<p>Lets have a quick look at the top of a GTF file so we can see what data it contains and what <strong>feature type</strong> and <strong>attribute type</strong> mean:</p>
-<pre><code>cd ~/CourseMaterials/data/counts
+<p>Lets have a quick look at the top of a GTF file so we can see what data it contains and what <strong>feature type</strong> and <strong>attribute type</strong> mean. The gtf file is currently in a compressed (gzip) format, we will need to unzip it first:</p>
+<pre><code>cd ~/RNAseq_September_2018/SupplementaryMaterials/counts
   
+gunzip Mus_musculus.GRCm38.80.gtf.gz
+
 head Mus_musculus.GRCm38.80.gtf</code></pre>
 <p>The code below uses <strong><code>featureCounts</code></strong> to count reads in a BAM file against a GTF for the mouse GRCm38 genome assembly.</p>
 <pre><code>  featureCounts \
