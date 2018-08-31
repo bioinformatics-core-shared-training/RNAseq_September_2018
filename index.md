@@ -2,7 +2,7 @@
 ### 3rd - 5th September 2018
 #### Bioinformatics Training Room, Craik-Marshall Building, Downing Site, University of Cambridge
 
-![](images/CRUK_Cambridge_logo_small.jpg)
+![](images/CRUK_Cambridge_Major Centre logo.jpg)
 
 
 ## Outline
@@ -10,6 +10,8 @@
 In this workshop, you will be learning how to analyse RNA-seq count data, using R. This will include reading the data into R, quality control and performing differential expression analysis and gene set testing, with a focus on the DESeq2 analysis workflow. You will learn how to generate common plots for analysis and visualisation of gene expression data, such as boxplots and heatmaps. 
 
 This workshop is aimed at biologists interested in learning how to perform differential expression analysis of RNA-seq data when reference genomes are available. 
+
+## Etherpad
 
 There is a [course Etherpad](https://tinyurl.com/RNAseq092018). Please post questions here and we will answer them as soon as we can (Or if you can answer someone elses question do so!). The trainers may also post useful code snippets here for you.
 
@@ -19,21 +21,25 @@ _Day 2 (p.m.)_
 
 12:30 - 13:30 - Lunch
 
-13:30 - 14:00 - Introduction to RNAseq - Ashley Sawle
+13:30 - 14:00 - [Introduction to RNAseq Analysis in R](html/00_Introduction_to_RNAseq_Analysis.html) - Ashley Sawle
 
-14:00 - 14:45 - Importing and QC of RNA-seq data - Ashley Sawle
+14:00 - 14:45 - [RNA-seq Pre-processing](html/02_Preprocessing_Data.nb.html) - Ashley Sawle  
+    + [practical solutions](Course_Materials/solutions/02_Preprocessing_Data.Solutions.nb.html)
 
-14:45 - 17:30 - Linear Models and Statistics for Differential Expression - Oscar Rueda
+14:45 - 17:30 - [Linear Model and Statistics for Differential Expression](slides/LinearModels.pdf) - Oscar Rueda
 
 _Day 3_
 
-9:30 - 12:00 - Differential Expression - Ashley Sawle
+9:30 - 12:00 - [Differential Expression for RNA-seq](html/04_DE_analysis_with_DESeq2.nb.html) - Ashley Sawle  
+    + [practical solutions](Course_Materials/solutions/04_DE_analysis.Solutions.nb.html)
 
 12:00 - 13:00 Lunch
 
-13:00 - 15:30 Annotation and Visualistaion - Abbi Edwards
+13:00 - 15:30 [Annotation and Visualisation of RNA-seq results](html/05_Annotation_and_Visualisation.nb.html) - Abbi Edwards  
+    + [practical solutions](Course_Materials/solutions/05_Annotation_and_Visualisation.Solutions.nb.html)
 
-15:30 - 17:30 Gene set analysis and Gene ontology testing - Stephane Ballereau
+15:30 - 17:30 [Gene-set testing](html/06_Gene_set_testing.nb.html) - Stephane Ballereau  
+    + [practical solutions](Course_Materials/solutions/06_Gene_set_testing.Solutions.nb.html)
 
 > ## Prerequisites {.prereq}
 >
@@ -50,25 +56,11 @@ _Day 3_
 container image onto your Linux, Mac or Windows machine (You will need to install [Docker](https://www.docker.com/community-edition) and for Win & Mac we also recommend the [Kitematic](https://github.com/docker/kitematic ) graphical interface to Docker. The image is pullable using 'docker pull mfernandes61/crukci_rnaseq_course'
 or searching for 'mfernandes61/crukci_rnaseq_course' in Kitematic.
 
-## RNAseq analysis in R tutorials
+## Source Materials for Practicals
 
-- [RNA-seq Pre-processing](html/02_Preprocessing_Data.nb.html)
-    + [source file](Course_Materials/02_Preprocessing_Data.Rmd)
-    + [practical solutions](Course_Materials/solutions/02_Preprocessing_Data.Solutions.Rmd)
-- [Differential Expression for RNA-seq](html/04_DE_analysis_with_edgeR.nb.html)
-    + [source file](Course_Materials/04_DE_analysis_with_edgeR.Rmd)
-    + [practical solutions](Course_Materials/solutions/04_DE_analysis_with_edgeR.Solutions.Rmd)
-- [Annotation and Visualisation of RNA-seq results](html/05_Annotation_and_Visualisation.nb.html)
-    + [source file](Course_Materials/05_Annotation_and_Visualisation.Rmd)
-    + [practical solutions](Course_Materials/solutions/05_Annotation_and_Visualisation.Solutions.Rmd)
-- [Gene-set testing](html/06_Gene_set_testing.nb.html)
-    + [source file](Course_Materials/06_Gene_set_testing.Rmd)
-    + [practical solutions](Course_Materials/solutions/06_Gene_set_testing.Solutions.Rmd)
-    
-### Lecture slides
-
-- [Introduction to RNAseq Analysis in R](html/00_Introduction_to_RNAseq_Analysis.html)
-- [Linear Model and Statistics for Differential Expression](slides/LinearModels.pdf)
+The all of the lecture slides and other source materials, including R code and 
+practical solutions, can be found in the course's [Github 
+repository](https://github.com/bioinformatics-core-shared-training/RNAseq_September_2018)
 
 ### Supplementary lessons
 
