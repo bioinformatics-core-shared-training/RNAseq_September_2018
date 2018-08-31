@@ -24,22 +24,22 @@ _Day 2 (p.m.)_
 13:30 - 14:00 - [Introduction to RNAseq Analysis in R](html/00_Introduction_to_RNAseq_Analysis.html) - Ashley Sawle
 
 14:00 - 14:45 - [RNA-seq Pre-processing](html/02_Preprocessing_Data.nb.html) - Ashley Sawle  
-    + [practical solutions](Course_Materials/solutions/02_Preprocessing_Data.Solutions.nb.html)
+- [practical solutions](Course_Materials/solutions/02_Preprocessing_Data.Solutions.nb.html)
 
 14:45 - 17:30 - [Linear Model and Statistics for Differential Expression](slides/LinearModels.pdf) - Oscar Rueda
 
 _Day 3_
 
 9:30 - 12:00 - [Differential Expression for RNA-seq](html/04_DE_analysis_with_DESeq2.nb.html) - Ashley Sawle  
-    + [practical solutions](Course_Materials/solutions/04_DE_analysis.Solutions.nb.html)
+- [practical solutions](Course_Materials/solutions/04_DE_analysis.Solutions.nb.html)
 
 12:00 - 13:00 Lunch
 
 13:00 - 15:30 [Annotation and Visualisation of RNA-seq results](html/05_Annotation_and_Visualisation.nb.html) - Abbi Edwards  
-    + [practical solutions](Course_Materials/solutions/05_Annotation_and_Visualisation.Solutions.nb.html)
+- [practical solutions](Course_Materials/solutions/05_Annotation_and_Visualisation.Solutions.nb.html)
 
 15:30 - 17:30 [Gene-set testing](html/06_Gene_set_testing.nb.html) - Stephane Ballereau  
-    + [practical solutions](Course_Materials/solutions/06_Gene_set_testing.Solutions.nb.html)
+- [practical solutions](Course_Materials/solutions/06_Gene_set_testing.Solutions.nb.html)
 
 > ## Prerequisites {.prereq}
 >
