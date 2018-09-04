@@ -29,14 +29,14 @@ _Day 1_
 12:30 - 13:30 Lunch
 
 13:30 - 17:30 [Practical: Transcriptome assembly and quantificatioin with stringtie](slides/DAY_1.pdf#page=11)
-- [Solutions for Day 1 practical](DAY1answers.txt)
+- [Solutions for Day 1 practical](slides/DAY1answers.txt)
 
 _Day 2_
 
 9:30 - 10:30 [Normalisation; Quasi-mapping and quantification with Salmon](slides/Day2_Lecture.pptx) - Guillermo Parada Gonzalez 
 
 10:30 - 12:30 [Practical: Mapping and quantification with Star; Quantification with Salmon](slides/DAY_2.pdf)
-- [Solutions for Day 2 practical](DAY2answers.txt)
+- [Solutions for Day 2 practical](slides/DAY2answers.txt)
 
 12:30 - 13:30 - Lunch
 
