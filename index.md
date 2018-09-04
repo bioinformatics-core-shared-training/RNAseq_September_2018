@@ -19,7 +19,7 @@ There is a [course Etherpad](https://tinyurl.com/RNAseq092018). Please post ques
 
 _Day 1_
 
-9:30 - 10:15 - [Introduction to RNAseq Methods](slides/RNA_seq-Part1.pdf) - Ashley Sawle
+9:30 - 10:15 - [Introduction to RNAseq Methods](slides/RNA_Seq-Part1.pdf) - Ashley Sawle
 
 10:15 - 11:00 - [Introduction to Alignment and Quantification](slides/RNA_Seq-Part1.pdf) - Guillermo Parada Gonzalez
 
