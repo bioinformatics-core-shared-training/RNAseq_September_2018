@@ -21,19 +21,19 @@ _Day 1_
 
 9:30 - 10:15 - [Introduction to RNAseq Methods](slides/RNA_seq-Part1.pdf) - Ashley Sawle
 
-10:15 - 11:00 - [Introduction to Alignment and Quantification](slides/RNA_seq-Part1.pdf) - Guillermo Parada Gonzalez
+10:15 - 11:00 - [Introduction to Alignment and Quantification](slides/RNA_Seq-Part1.pdf) - Guillermo Parada Gonzalez
 
-11:00 - 12:30 [Practical: QC and Alignment with HISAT2](slides/Day_1.pdf)
+11:00 - 12:30 [Practical: QC and Alignment with HISAT2](slides/DAY_1.pdf)
 
 12:30 - 13:30 Lunch
 
-13:30 - 17:30 [Practical: Transcriptome assembly and quantificatioin with stringtie](slides/Day_1.pdf)
+13:30 - 17:30 [Practical: Transcriptome assembly and quantificatioin with stringtie](slides/DAY_1.pdf)
 
 _Day 2_
 
-9:30 - 10:30 [Normalisation; Quasi-mapping and quantification with Salmon](slides/RNA_seq-Part1.pdf) - Guillermo Parada Gonzalez 
+9:30 - 10:30 [Normalisation; Quasi-mapping and quantification with Salmon](slides/RNA_Seq-Part1.pdf) - Guillermo Parada Gonzalez 
 
-10:30 - 12:30 [Practical: Mapping and quantification with Star; Quantification with Salmon](slides/Day_2.pdf)
+10:30 - 12:30 [Practical: Mapping and quantification with Star; Quantification with Salmon](slides/DAY_2.pdf)
 
 12:30 - 13:30 - Lunch
 
