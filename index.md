@@ -19,7 +19,9 @@ There is a [course Etherpad](https://tinyurl.com/RNAseq092018). Please post ques
 
 _Day 1_
 
-9:30 - 11:00 - [Introductions to Alignment and Quantification](slides/RNA_seq-Part1.pdf) - Guillermo Parada Gonzalez & Ashley Sawle
+9:30 - 10:15 - [Introduction to RNAseq Methods](slides/RNA_seq-Part1.pdf) - Ashley Sawle
+
+10:15 - 11:00 - [Introduction to Alignment and Quantification](slides/RNA_seq-Part1.pdf) - Guillermo Parada Gonzalez
 
 11:00 - 12:30 [Practical: QC and Alignment with HISAT2](slides/Day_1.pdf)
 
