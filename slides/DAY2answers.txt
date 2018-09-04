@@ -1,0 +1,31 @@
+pandoc rna-cover-page.md RNASeq_day2.md -V geometry:margin=1.2in -V fontsize=12pt --listings -H rna-listings-setup.tex --latex-engine=xelatex -s -o DAY_2.pdf
+
+#CREATE INDEX
+mkdir STAR_chr2
+cd STAR_chr2/
+wget ftp://ftp.ensembl.org/pub/release-90/fasta/danio_rerio/dna/Danio_rerio.GRCz10.dna.chromosome.2.fa.gz
+gunzip Danio_rerio.GRCz10.dna.chromosome.2.fa.gz
+cd ..
+
+STAR --runThreadN 8 --runMode genomeGenerate --genomeDir  STAR_chr2 --genomeFastaFiles STAR_chr2/Danio_rerio.GRCz10.dna.chromosome.2.fa --sjdbGTFfile annotation/Danio_rerio.GRCz10.90.chr.gtf --sjdbOverhang 99
+
+#STAR ALN
+STAR --runThreadN 8 --runMode alignReads --genomeDir genome/STAR_genome --quantMode GeneCounts --readFilesIn data/SRR1048063_1.fastq.gz data/SRR1048063_2.fastq.gz --readFilesCommand zcat --outSAMtype BAM SortedByCoordinate
+
+awk -F"," '($1=="gene_id" || $1=="ENSDARG00000100294" || $1=="ENSDARG00000074362" || $1=="ENSDARG00000078585" || $1=="ENSDARG00000012789") {print $0}' gene_count_matrix.csv 
+
+awk -F"\t" '($1=="ENSDARG00000100294" || $1=="ENSDARG00000074362" || $1=="ENSDARG00000078585" || $1=="ENSDARG00000012789") {print $0}' gene_count_matrix.csv 
+
+#Salmon Index
+
+mkdir -p genome/Drer_SalmonQuasi
+
+salmon index -t annotation/Danio_rerio.GRCz10.cdna_noversion.all.fa -i genome/Drer_SalmonQuasi --type quasi -k 31 -p 8
+
+
+#Salmon Alignment
+
+mkdir salmon_quant
+
+salmon quant -i transcripts_index -l IU -1 (gunzip -c data/SRR1048063_1.fastq.gz) -2 (gunzip -c data/SRR1048063_2.fastq.gz) -o salmon_quant
+

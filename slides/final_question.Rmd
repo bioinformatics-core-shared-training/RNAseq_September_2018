@@ -1,0 +1,71 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+
+
+library(data.table)
+
+```
+
+
+
+```{r}
+
+transcript_count_matrix <- data.table(read.csv("~/Course_Materials/Part1/RNA-seq/transcript_count_matrix.csv"))
+
+gffcompare_ensembl_tracking <- data.table(read.delim("~/Course_Materials/Part1/RNA-seq/gffcompare/gffcompare_ensembl.tracking", header=FALSE))
+
+
+gffcompare_ensembl_loci <- data.table(read.delim("~/Course_Materials/Part1/RNA-seq/gffcompare/gffcompare_ensembl.loci", header=FALSE))
+```
+
+
+
+
+```{r}
+
+gffcompare_ensembl_tracking[V4=="u", ]
+
+gffcompare_ensembl_loci[, c("V1",  "V4") ]
+
+
+unannotated_loci <- merge(gffcompare_ensembl_tracking[V4=="u", ], gffcompare_ensembl_loci[, c("V1",  "V4") ], by.x="V2", by.y="V1")
+
+
+unannotated_loci_list <- unlist(strsplit(as.character(unannotated_loci$V4.y), ","))
+
+
+```
+
+
+
+```{r}
+
+unannotated_loci_counts <- transcript_count_matrix[transcript_id %in% unannotated_loci_list, ]
+
+unannotated_loci_counts[order(-SRR1048063), ]
+
+
+```
+
+
+
+```{bash}
+
+grep "MSTRG.44509.1" stringtie/merged.gtf
+ 
+
+```
+
+
+```{bash}
+
+grep "MSTRG.42211.1" stringtie/merged.gtf
+
+```
+

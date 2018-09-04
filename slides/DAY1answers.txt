@@ -1,0 +1,67 @@
+pandoc rna-cover-page.md RNASeq_part1.md -V geometry:margin=1.2in -V fontsize=12pt --listings -H rna-listings-setup.tex --latex-engine=xelatex -s -o DAY_1.pdf
+
+
+#FASTQC
+fastqc --help
+
+fastqc --version
+
+gzip -cd data/SRR1048063_1.fastq.gz | head - n 4 |less -S 
+
+mkdir -p fastqc
+fastqc --outdir=fastqc --noextract data/SRR1048063_1.fastq.gz
+fastqc --outdir=fastqc --noextract data/SRR1048063_2.fastq.gz
+
+#CREATE INDEX
+cd genome
+wget ftp://ftp.ensembl.org/pub/release-90/fasta/danio_rerio/dna/Danio_rerio.GRCz10.dna.chromosome.4.fa.gz
+gunzip Danio_rerio.GRCz10.dna.chromosome.4.fa.gz
+cd ..
+less -S genome/Danio_rerio.GRCz10.dna.chromosome.4.fa 
+mkdir -p genome/GRCz10_chr4
+
+hisat2-build genome/Danio_rerio.GRCz10.dna.chromosome.4.fa genome/GRCz10_chr4/GRCz10chr4
+
+ls -ltrh genome/GRCz10_chr4
+
+hisat2_extract_splice_sites.py annotation/Danio_rerio.GRCz10.90.chr.gtf > annotation/ens90z10_splicesites.txt
+
+#RUN HISAT
+mkdir hisat2
+hisat2 --help
+
+hisat2 --phred33 --known-splicesite-infile annotation/ens90z10_splicesites.txt --downstream-transcriptome-assembly -p 8 -x genome/GRCz10/Drerioz10 --summary-file hisat2/SRR1048063_Aln.stat -1 data/SRR1048063_1.fastq.gz -2 data/SRR1048063_2.fastq.gz -S hisat2/SRR1048063.sam 
+
+#SORT and BAM CONVERSION
+samtools view -u hisat2/SRR1048063.sam | samtools sort -@ 8 - -o hisat2/SRR1048063.sorted.bam
+
+samtools index hisat2/SRR1048063.sorted.bam
+
+
+#RUN STRINGTIE FOR THE ASSEMBLY
+stringtie --help 
+
+stringtie hisat2/SRR1048063.sorted.bam -p 8 -o stringtie/SRR1048063.gtf -G annotation/Danio_rerio.GRCz10.90.chr.gtf 
+
+#RUN STRINGTIE TO MERGE
+stringtie -p 6 --merge -o stringtie/merged.gtf -G annotation/Danio_rerio.GRCz10.90.chr.gtf stringtie/assemblylist.txt  
+
+#RUN GFFCOMPARE
+gffcompare --help
+
+mkdir -p gffcompare
+gffcompare -r annotation/Danio_rerio.GRCz10.90.chr.gtf -s genome/Danio_rerio.GRCz10.dna.toplevel.fa -o gffcompare/gffcompare_ensembl stringtie/merged.gtf 
+
+#RUN STRINGTIE TO RIQUANTIFY
+mkdir -p stringtie_quant
+stringtie -p 8 -G stringtie/merged.gtf -B -e -o stringtie_quant/SRR1048063.gtf hisat2/SRR1048063.sorted.bam
+
+touch sample_list.txt
+vi sample_list, SRR1048063 stringtie_quant/SRR1048063.gtf
+
+mv sample_list.txt stringtie_quant
+
+python prepDE.py -i stringtie_quant/sample_list.txt
+
+
+
