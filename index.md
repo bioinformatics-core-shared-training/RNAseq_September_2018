@@ -15,7 +15,7 @@ This workshop is aimed at biologists interested in learning how to perform diffe
 
 There is a [course Etherpad](https://tinyurl.com/RNAseq092018). Please post questions here and we will answer them as soon as we can (Or if you can answer someone elses question do so!). The trainers may also post useful code snippets here for you.
 
-## Timetable (for Part 2 )
+## Timetable
 
 _Day 1_
 
@@ -24,6 +24,7 @@ _Day 1_
 10:15 - 11:00 - [Introduction to Alignment and Quantification](slides/RNA_Seq-Part1.pdf#page=27) - Guillermo Parada Gonzalez
 
 11:00 - 12:30 [Practical: QC and Alignment with HISAT2](slides/DAY_1.pdf)
+- [Dropbox with full materials for Part 1 of the course including data files](https://www.dropbox.com/sh/rb03yhfqixvbcn5/AADqyJXECPbcZdyIUXw6yQEia?dl=0  )
 
 12:30 - 13:30 Lunch
 
