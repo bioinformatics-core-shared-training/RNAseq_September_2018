@@ -17,7 +17,21 @@ There is a [course Etherpad](https://tinyurl.com/RNAseq092018). Please post ques
 
 ## Timetable (for Part 2 )
 
-_Day 2 (p.m.)_
+_Day 1_
+
+9:30 - 11:00 - [Introductions to Alignment and Quantification](slides/RNA_seq-Part1.pdf) - Guillermo Parada Gonzalez & Ashley Sawle
+
+11:00 - 12:30 [Practical: QC and Alignment with HISAT2](slides/Day_1.pdf)
+
+12:30 - 13:30 Lunch
+
+13:30 - 17:30 [Practical: Transcriptome assembly and quantificatioin with stringtie](slides/Day_1.pdf)
+
+_Day 2_
+
+9:30 - 10:30 [Normalisation; Quasi-mapping and quantification with Salmon](slides/RNA_seq-Part1.pdf) - Guillermo Parada Gonzalez 
+
+10:30 - 12:30 [Practical: Mapping and quantification with Star; Quantification with Salmon](slides/Day_2.pdf)
 
 12:30 - 13:30 - Lunch
 
@@ -30,7 +44,7 @@ _Day 2 (p.m.)_
 
 _Day 3_
 
-9:30 - 12:00 - [Differential Expression for RNA-seq](html/04_DE_analysis_with_DESeq2.nb.html) - Ashley Sawle  
+9:30 - 12:00 - [Differential Expression for RNA-seq](html/04_DE_analysis_with_DESeq2.nb.html) - Stephane Ballereau
 - [practical solutions](Course_Materials/solutions/04_DE_analysis.Solutions.nb.html)
 
 12:00 - 13:00 Lunch
@@ -38,7 +52,7 @@ _Day 3_
 13:00 - 15:30 [Annotation and Visualisation of RNA-seq results](html/05_Annotation_and_Visualisation.nb.html) - Abbi Edwards  
 - [practical solutions](Course_Materials/solutions/05_Annotation_and_Visualisation.Solutions.nb.html)
 
-15:30 - 17:30 [Gene-set testing](html/06_Gene_set_testing.nb.html) - Stephane Ballereau  
+15:30 - 17:30 [Gene-set testing](html/06_Gene_set_testing.nb.html) - Ashley Sawle  
 - [practical solutions](Course_Materials/solutions/06_Gene_set_testing.Solutions.nb.html)
 
 > ## Prerequisites
