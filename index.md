@@ -49,7 +49,7 @@ _Day 2_
 
 _Day 3_
 
-9:30 - 12:00 - [Differential Expression for RNA-seq](html/04_DE_analysis_with_DESeq2.nb.html) - Stephane Ballereau
+9:30 - 12:00 - [Differential Expression for RNA-seq](html/04_DE_analysis_with_DESeq2.nb.html) - Ashley Sawle
 - [practical solutions](Course_Materials/solutions/04_DE_analysis.Solutions.nb.html)
 
 12:00 - 13:00 Lunch
