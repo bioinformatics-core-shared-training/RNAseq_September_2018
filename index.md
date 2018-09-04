@@ -46,7 +46,7 @@ _Day 2_
 - [practical solutions](Course_Materials/solutions/02_Preprocessing_Data.Solutions.nb.html)
 
 14:45 - 17:30 - [Linear Model and Statistics for Differential Expression](slides/LinearModels.pdf) - Oscar Rueda
-
+ - [Linear models practical sessions](html/03_Linear_Models.nb.html)
 _Day 3_
 
 9:30 - 12:00 - [Differential Expression for RNA-seq](html/04_DE_analysis_with_DESeq2.nb.html) - Ashley Sawle
